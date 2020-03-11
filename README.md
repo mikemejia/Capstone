@@ -1,1 +1,13 @@
 # Capstone
+
+
+## Problem Statement:
+
+Strategy and skill are major components in Formula 1. Although most fans see the skill that drivers demonstrate in races, few observe the strategy that teams implement during their races. The best startegy involves the right planning of pit stops and what tires should be used and which tires should be replaced afterwards. Although there is a lot of engineering put into the F1 cars there are still a few variables that can put some lesser cars in the front of the pack. As there are no limits to pit stops and each pit stop removes time from every lap completed, this can affect a drivers position in the race. A car already being in the back of the pack has to plan effectivily if they hope to gain position. With data collecting and modeling I will determine the best race strategy during a race. All of this depends mostly on tire selection, tire wear, and lap times. The less grip a car has the slower its pace. But with different race tires some might have less grip which give a slower pace but have a longer life that can help delay the need for a pitstop.
+
+## Data collection:
+
+The majority of the data was collected from the formula one race data from Kaggle. It includes 13 different tables that vary from what circuits are included in that season, to lap times, drivers, and results. The kaggle data was gathered using "Ergast" which is an api that queries historical data for the formula one series from 1950 to the present. The other part of data collecting was the tire data which was not included in the kaggle website or the Ergast Api. This information was available through "racefans.net" which did have the class of tyres used during a race and during the season. 
+## Parsing Data:
+
+Once all the data had been collected I created an sql server on my person computer. Creating a database that would hold all my tables I would then need to create each table specifying which datatypes each column would be and which column would be the primary key if it need it. Although creating the table and the database could be done in Terminal, I would find it more useful to implement pymysql. PyMySQL are databse connectors which allows python programs to communicate with them. I would write the sql syntax as I normally would make that into a string which I could then send through PyMySQL to my server which would then run the command. As said before this could be easily done on the terminal but this became useful when inserting data into the tables. 
